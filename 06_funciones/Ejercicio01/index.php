@@ -27,7 +27,8 @@ function imprimir_tablas($inicio,$fin)
     }     
 }
 
-imprimir_tablas(20, 40);
+$tabla = imprimir_tablas(20, 40);
+
 
 
 ?>

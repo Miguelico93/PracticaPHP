@@ -1,3 +1,15 @@
+<?php
+
+session_start();
+
+if (isset($_SESSION['logincorrecto'])) {
+  $_SESSION['logincorrecto'] = 0;
+}
+
+
+
+?>
+
 <!doctype html>
 <html lang="es">
   <head>
@@ -40,7 +52,7 @@
   <label for="inputPassword" class="sr-only">Contraseña</label>
   <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
   <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
-  <p class="mt-5 mb-3 text-muted">&copy; Proyecto Miguel Angel Vargas IAW</p>
+  <p class="mt-5 mb-3 text-muted"></p>
 </form>
 </body>
 </html>
